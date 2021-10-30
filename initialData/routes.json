@@ -1,0 +1,41 @@
+[{
+        "id": 0,
+        "name": "National Forest to end of pavement",
+        "sourceType": "published",
+        "source": "American Whitewater",
+        "class": "2-4",
+        "url": "https://www.americanwhitewater.org/content/River/detail/id/3038/"
+    },
+    {
+        "id": 1,
+        "name": "End of pavement to McClun Wayside",
+        "sourceType": "published",
+        "source": "American Whitewater",
+        "class": "2-3",
+        "url": "https://www.americanwhitewater.org/content/River/detail/id/1490/"
+    },
+    {
+        "id": 2,
+        "name": "McClun Wayside to McKercher Park",
+        "sourceType": "published",
+        "source": "American Whitewater",
+        "class": "2",
+        "url": "https://www.americanwhitewater.org/content/River/detail/id/1491/"
+    },
+    {
+        "id": 3,
+        "name": "McKercher Park to Brownsville",
+        "sourceType": "published",
+        "source": "American Whitewater",
+        "class": "1",
+        "url": "https://www.americanwhitewater.org/content/River/detail/id/3039/"
+    },
+    {
+        "id": 4,
+        "name": "Queen Avenue to Willamette River",
+        "sourceType": "user-submitted",
+        "source": "Diversifed Creative",
+        "class": "1",
+        "url": "/userRoute1"
+    }
+]
