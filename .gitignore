@@ -1,1 +1,8 @@
 node_modules
+
+data
+
+//contains sensitive info
+config.js
+bin/server.key
+bin/server.cert
