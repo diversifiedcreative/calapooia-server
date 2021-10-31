@@ -4,8 +4,13 @@ var path = require('path');
 var logger = require('morgan');
 const config = require('./config');
 
+//default route inclusions
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+
+//my route inclusions
+const recsiteRouter = require('./routes/recsiteRouter');
+const routeRouter = require('./routes/routeRouter');
 
 const mongoose = require('mongoose');
 
@@ -37,16 +42,21 @@ app.all('*', (req, res, next) => {
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade'); //changed from 'jade' to 'pug'
+app.set('view engine', 'pug'); //changed from 'jade' to 'pug'
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(express.static(path.join(__dirname, 'public')));
-
+//default Router inclusions
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+//my Router inclusions
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/recsites', recsiteRouter);
+app.use('/routes', routeRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
