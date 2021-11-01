@@ -9,8 +9,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 //my route inclusions
-const recsiteRouter = require('./routes/recsiteRouter');
+const recSiteRouter = require('./routes/recSiteRouter');
 const routeRouter = require('./routes/routeRouter');
+const tripReportRouter = require('./routes/tripReportRouter');
 
 const mongoose = require('mongoose');
 
@@ -55,8 +56,9 @@ app.use('/users', usersRouter);
 //my Router inclusions
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/recsites', recsiteRouter);
+app.use('/recsites', recSiteRouter);
 app.use('/routes', routeRouter);
+app.use('/tripreports', tripReportRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

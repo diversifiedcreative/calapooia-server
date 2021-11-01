@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const recSiteSchema = new Schema(
+const tripReportSchema = new Schema(
 	{
-		name: {
+		userName: {
 			type: String,
 			required: true,
 		},
@@ -11,17 +11,21 @@ const recSiteSchema = new Schema(
 			type: String,
 			required: true,
 		},
-		type: {
-			type: String,
-			default: false,
-		},
-		description: {
+		visitType: {
 			type: String,
 			required: true,
 		},
-		credit: {
+		visitDate: {
 			type: String,
-			required: false,
+			required: true,
+		},
+		recommend: {
+			type: String,
+			required: true,
+		},
+		tripText: {
+			type: String,
+			required: true,
 		},
 	},
 	{
@@ -29,4 +33,4 @@ const recSiteSchema = new Schema(
 	}
 );
 
-module.exports = mongoose.model('RecSite', recSiteSchema);
+module.exports = mongoose.model('TripReport', tripReportSchema);

@@ -1,0 +1,18 @@
+[
+    {
+        "userName": "DivCreate",
+        "location": "Swiss Cheese",
+        "visitType": "singleLoc",
+        "visitDate": "2021-10-30",
+        "recommend": "Yes",
+        "tripText": "Lovely time in a great place. Too cold to swim. Nice fall leaves."
+    },
+    {
+        "userName": "Scott Alan",
+        "location": "McKercher Park",
+        "visitType": "singleLoc",
+        "visitDate": "2021-10-28",
+        "recommend": "Neutral",
+        "tripText": "Not much to do when it's too cold to swim."
+    }
+]

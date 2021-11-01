@@ -1,38 +1,38 @@
 const express = require('express');
-const RecSite = require('../models/recSite');
+const TripReport = require('../models/tripReport');
 // const authenticate = require('../authenticate');
 const cors = require('./cors');
 
-const recSiteRouter = express.Router();
+const tripReportRouter = express.Router();
 
-recSiteRouter
+tripReportRouter
 	.route('/')
 	.options(cors.corsWithOptions, (req, res) => res.sendStatus(200))
 	.get(cors.cors, (req, res, next) => {
-		RecSite.find()
-			.then((recSites) => {
+		TripReport.find()
+			.then((tripReports) => {
 				res.statusCode = 200;
 				res.setHeader('Content-Type', 'application/json');
-				res.json(recSites);
+				res.json(tripReports);
 			})
 			.catch((err) => next(err));
 	})
 	.post(cors.corsWithOptions, (req, res, next) => {
-		RecSite.create(req.body)
-			.then((recSite) => {
-				console.log('RecSite Created ', recSite);
+		TripReport.create(req.body)
+			.then((tripReport) => {
+				console.log('TripReport Created ', tripReport);
 				res.statusCode = 200;
 				res.setHeader('Content-Type', 'application/json');
-				res.json(recSite);
+				res.json(tripReport);
 			})
 			.catch((err) => next(err));
 	})
 	.put(cors.corsWithOptions, (req, res) => {
 		res.statusCode = 403;
-		res.end('PUT operation not supported on /recsites');
+		res.end('PUT operation not supported on /tripreports');
 	})
 	.delete(cors.corsWithOptions, (req, res, next) => {
-		RecSite.deleteMany()
+		TripReport.deleteMany()
 			.then((response) => {
 				res.statusCode = 200;
 				res.setHeader('Content-Type', 'application/json');
@@ -41,39 +41,39 @@ recSiteRouter
 			.catch((err) => next(err));
 	});
 
-recSiteRouter
-	.route('/:recSiteId')
+tripReportRouter
+	.route('/:tripReportId')
 	.options(cors.corsWithOptions, (req, res) => res.sendStatus(200))
 	.get(cors.cors, (req, res, next) => {
-		RecSite.findById(req.params.recSiteId)
-			.then((recSite) => {
+		TripReport.findById(req.params.tripReportId)
+			.then((tripReport) => {
 				res.statusCode = 200;
 				res.setHeader('Content-Type', 'application/json');
-				res.json(recSite);
+				res.json(tripReport);
 			})
 			.catch((err) => next(err));
 	})
 	.post(cors.corsWithOptions, (req, res) => {
 		res.statusCode = 403;
-		res.end(`POST operation not supported on /recsites/${req.params.recSiteId}`);
+		res.end(`POST operation not supported on /tripreports/${req.params.tripReportId}`);
 	})
 	.put(cors.corsWithOptions, (req, res, next) => {
-		RecSite.findByIdAndUpdate(
-			req.params.recSiteId,
+		TripReport.findByIdAndUpdate(
+			req.params.tripReportId,
 			{
 				$set: req.body,
 			},
 			{ new: true }
 		)
-			.then((recSite) => {
+			.then((tripReport) => {
 				res.statusCode = 200;
 				res.setHeader('Content-Type', 'application/json');
-				res.json(recSite);
+				res.json(tripReport);
 			})
 			.catch((err) => next(err));
 	})
 	.delete(cors.corsWithOptions, (req, res, next) => {
-		RecSite.findByIdAndDelete(req.params.recSiteId)
+		TripReport.findByIdAndDelete(req.params.tripReportId)
 			.then((response) => {
 				res.statusCode = 200;
 				res.setHeader('Content-Type', 'application/json');
@@ -82,4 +82,4 @@ recSiteRouter
 			.catch((err) => next(err));
 	});
 
-module.exports = recSiteRouter;
+module.exports = tripReportRouter;
