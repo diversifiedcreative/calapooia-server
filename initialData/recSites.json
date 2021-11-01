@@ -3,27 +3,31 @@
         "name": "Swiss Cheese",
         "location": "Upper Calapooia Road, mile 8",
         "type": "swimming hole",
-        "description": "Swiss Cheese is a special location and a favorite swimming hole. The water is cold but enjoyable on a hot day. The river flows through a gorge of volcanic bedrock which includes many strange holes and tunnels that resemble the eponymous cheese for which the location is named."
+        "description": "Swiss Cheese is a special location and a favorite swimming hole. The water is cold but enjoyable on a hot day. The river flows through a gorge of volcanic bedrock which includes many strange holes and tunnels that resemble the eponymous cheese for which the location is named.",
+        "credit": "Diversified Creative"
     },
     {
         "id": 1,
         "name": "McKercher Park",
         "location": "Highway 228 near Crawfordsville",
         "type": "swimming hole",
-        "description": "A public park that is extrememly popular during warm summer weather. People swim, drift on floaties, and generally enjoy a beautiful peaceful spot on the river."
+        "description": "A public park that is extrememly popular during warm summer weather. People swim, drift on floaties, and generally enjoy a beautiful peaceful spot on the river.",
+        "credit": "Diversified Creative"
     },
     {
         "id": 2,
         "name": "Queens Bend",
         "location": "Queen Avenue at west edge of Albany",
         "type": "swimming hole",
-        "description": "A well-known and well-used location by locals for swimming,sunbathing, floating, and hanging out."
+        "description": "A well-known and well-used location by locals for swimming,sunbathing, floating, and hanging out.",
+        "credit": "Diversified Creative"
     },
     {
         "id": 3,
         "name": "Willamette Confluence",
         "location": "Albany, next to Bryant Park",
         "type": "swimming hole",
-        "description": "Accessible from Bryant Park on the west and Montieth Riverfront park on the east, this is the most utilized recreation location on the calapooia river, popular for swimming and paddling."
+        "description": "Accessible from Bryant Park on the west and Montieth Riverfront park on the east, this is the most utilized recreation location on the calapooia river, popular for swimming and paddling.",
+        "credit": "Diversified Creative"
     }
 ]

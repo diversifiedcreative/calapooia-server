@@ -16,6 +16,29 @@ recsiteRouter
 				res.json(recsites);
 			})
 			.catch((err) => next(err));
+	})
+	.post(cors.corsWithOptions, (req, res, next) => {
+		Recsite.create(req.body)
+			.then((recsite) => {
+				console.log('Recsite Created ', recsite);
+				res.statusCode = 200;
+				res.setHeader('Content-Type', 'application/json');
+				res.json(recsite);
+			})
+			.catch((err) => next(err));
+	})
+	.put(cors.corsWithOptions, (req, res) => {
+		res.statusCode = 403;
+		res.end('PUT operation not supported on /recsites');
+	})
+	.delete(cors.corsWithOptions, (req, res, next) => {
+		Recsite.deleteMany()
+			.then((response) => {
+				res.statusCode = 200;
+				res.setHeader('Content-Type', 'application/json');
+				res.json(response);
+			})
+			.catch((err) => next(err));
 	});
 
 module.exports = recsiteRouter;
