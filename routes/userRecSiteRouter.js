@@ -1,38 +1,38 @@
 const express = require('express');
-const Route = require('../models/route');
+const UserRecSite = require('../models/userRecSite');
 // const authenticate = require('../authenticate');
 const cors = require('./cors');
 
-const routeRouter = express.Router();
+const userRecSiteRouter = express.Router();
 
-routeRouter
+userRecSiteRouter
 	.route('/')
 	.options(cors.corsWithOptions, (req, res) => res.sendStatus(200))
 	.get(cors.cors, (req, res, next) => {
-		Route.find()
-			.then((routes) => {
+		UserRecSite.find()
+			.then((userRecSites) => {
 				res.statusCode = 200;
 				res.setHeader('Content-Type', 'application/json');
-				res.json(routes);
+				res.json(userRecSites);
 			})
 			.catch((err) => next(err));
 	})
     .post(cors.corsWithOptions, (req, res, next) => {
-        Route.create(req.body)
-        .then(route => {
-            console.log('Route Created ', route);
+        UserRecSite.create(req.body)
+        .then(userRecSite => {
+            console.log('Rec Site submitted ', userRecSite);
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
-            res.json(route);
+            res.json(userRecSite);
         })
         .catch(err => next(err));
     })
     .put(cors.corsWithOptions, (req, res) => {
         res.statusCode = 403;
-        res.end('PUT operation not supported on /routes');
+        res.end('PUT operation not supported on /userrecsites');
     })
     .delete(cors.corsWithOptions, (req, res, next) => {
-        Partner.deleteMany()
+        UserRecSite.deleteMany()
         .then(response => {
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
@@ -41,4 +41,4 @@ routeRouter
         .catch(err => next(err));
     });
     
-module.exports = routeRouter;
+module.exports = userRecSiteRouter;

@@ -1,31 +1,23 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const routeSchema = new Schema(
+const recSiteSchema = new Schema(
 	{
-		name: {
+		userName: {
 			type: String,
 			required: true,
 		},
-		sourceType: {
+		email: {
 			type: String,
 			required: true,
 		},
-		source: {
+		location: {
 			type: String,
 			required: true,
 		},
-		class: {
+		text: {
 			type: String,
 			required: true,
-		},
-		url: {
-			type: String,
-			required: true,
-		},
-		credit: {
-			type: String,
-			required: false,
 		},
 	},
 	{
@@ -33,4 +25,4 @@ const routeSchema = new Schema(
 	}
 );
 
-module.exports = mongoose.model('Route', routeSchema);
+module.exports = mongoose.model('UserRecSite', recSiteSchema);

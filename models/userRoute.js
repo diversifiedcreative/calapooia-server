@@ -1,31 +1,31 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const routeSchema = new Schema(
+const userRouteSchema = new Schema(
 	{
-		name: {
+		userName: {
 			type: String,
 			required: true,
 		},
-		sourceType: {
+		email: {
 			type: String,
 			required: true,
 		},
-		source: {
+		startLoc: {
 			type: String,
 			required: true,
 		},
-		class: {
+		endLoc: {
 			type: String,
 			required: true,
 		},
-		url: {
+		rapidClass: {
 			type: String,
 			required: true,
 		},
-		credit: {
+		text: {
 			type: String,
-			required: false,
+			required: true,
 		},
 	},
 	{
@@ -33,4 +33,4 @@ const routeSchema = new Schema(
 	}
 );
 
-module.exports = mongoose.model('Route', routeSchema);
+module.exports = mongoose.model('UserRoute', userRouteSchema);

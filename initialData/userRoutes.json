@@ -1,0 +1,18 @@
+[
+    {
+        "userName": "DivCreate",
+        "email": "div@create.com",
+        "startLoc": "Holley",
+        "endLoc": "McKercher Park",
+        "rapidClass": "1-2",
+        "text": "a fun and easy run. some portage when water is low."
+    },
+    {
+        "userName": "ScottAlan",
+        "email": "scott@alan.com",
+        "startLoc": "SwissCheese",
+        "endLoc": "Holley Park",
+        "rapidClass": "3-4",
+        "text": "wild, dangerous, and fun. Scouting necessary. Unrunnable in summer or when water is low. Scary when water is high."
+    }
+]
