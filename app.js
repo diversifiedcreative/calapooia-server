@@ -18,12 +18,6 @@ const userRecSiteRouter = require('./routes/userRecSiteRouter');
 const mongoose = require('mongoose');
 
 const url = config.mongoUrl; //Change for production
-// const connect = mongoose.connect(url, {
-// 	useCreateIndex: true,
-// 	useFindAndModify: false,
-// 	useNewUrlParser: true,
-// 	useUnifiedTopology: true,
-// });
 
 const connect = mongoose.connect(url);
 

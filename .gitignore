@@ -2,4 +2,6 @@ node_modules
 
 
 
-//contains sensitive info
+//SSL Certificate (self-signed for development only--get new certificate on deployment server)
+server.cert
+server.key
