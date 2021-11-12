@@ -1,6 +1,6 @@
 node_modules
 
-
+data
 
 //SSL Certificate (self-signed for development only--get new certificate on deployment server)
 server.cert
