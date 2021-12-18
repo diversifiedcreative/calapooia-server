@@ -5,7 +5,8 @@
         "sourceType": "published",
         "source": "American Whitewater",
         "class": "2-4",
-        "url": "https://www.americanwhitewater.org/content/River/detail/id/3038/"
+        "url": "https://www.americanwhitewater.org/content/River/detail/id/3038/",
+        "description": "This run follows Upper Calapooia Road/NF-2820 through a lengthy stretch of privately-held timberland. The road is often open, but parking/stopping on the road is prohibited between the gate near the the end-of-pavement and the borders of the Willamette National Forest and Weyerhaeuser maintains the right to close/control the road as needed. Observe all signs and scout/plan ahead. Likely not runnable in summer."
     },
     {
         "id": 1,
@@ -13,7 +14,8 @@
         "sourceType": "published",
         "source": "American Whitewater",
         "class": "2-3",
-        "url": "https://www.americanwhitewater.org/content/River/detail/id/1490/"
+        "url": "https://www.americanwhitewater.org/content/River/detail/id/1490/",
+        "description": "This is the last section of river in the lush timberland valleys of the old cascades. McClun Wayside, just above the town of Holley, approximately marks the river's transition into the large agricultural swaths of the Willamette Valley that define it's lower half. Likely not runnable in summer."
     },
     {
         "id": 2,
@@ -21,7 +23,8 @@
         "sourceType": "published",
         "source": "American Whitewater",
         "class": "2",
-        "url": "https://www.americanwhitewater.org/content/River/detail/id/1491/"
+        "url": "https://www.americanwhitewater.org/content/River/detail/id/1491/",
+        "description": "Run begins at a small wayside just above Holley on Upper Calapooia Road. Route passes through Crawfordsville and ends at popular McKercher park just past town. Likely not runnable in summer."
     },
     {
         "id": 3,
@@ -29,7 +32,8 @@
         "sourceType": "published",
         "source": "American Whitewater",
         "class": "1",
-        "url": "https://www.americanwhitewater.org/content/River/detail/id/3039/"
+        "url": "https://www.americanwhitewater.org/content/River/detail/id/3039/",
+        "description": "A pleasant float from a popular park to a historic town. Very flat. Likely not runnable in summer. McKercher Park is a clear and easy put-in with parking. Scout your chosen take-out location in Brownsville."
     },
     {
         "id": 4,
@@ -38,6 +42,7 @@
         "source": "Diversifed Creative",
         "class": "1",
         "url": "/userRoute1",
-        "credit": "Diversified Creative"
+        "credit": "Diversified Creative",
+        "description": "A pleasant float from a popular park to a historic town. Very flat. Likely not runnable in summer."
     }
 ]
