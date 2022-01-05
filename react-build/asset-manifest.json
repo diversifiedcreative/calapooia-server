@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb96f7bc.chunk.css",
+    "main.js": "/static/js/main.e7249ff2.chunk.js",
+    "main.js.map": "/static/js/main.e7249ff2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f11d4415.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f11d4415.js.map",
+    "static/css/2.a0197091.chunk.css": "/static/css/2.a0197091.chunk.css",
+    "static/js/2.f85bb241.chunk.js": "/static/js/2.f85bb241.chunk.js",
+    "static/js/2.f85bb241.chunk.js.map": "/static/js/2.f85bb241.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a0197091.chunk.css.map": "/static/css/2.a0197091.chunk.css.map",
+    "static/css/main.cb96f7bc.chunk.css.map": "/static/css/main.cb96f7bc.chunk.css.map",
+    "static/js/2.f85bb241.chunk.js.LICENSE.txt": "/static/js/2.f85bb241.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Lato-Regular.9919edff.ttf",
+    "static/media/cala-bend.5758ccf2.jpg": "/static/media/cala-bend.5758ccf2.jpg",
+    "static/media/cala-down-willamette.c8c6644c.jpg": "/static/media/cala-down-willamette.c8c6644c.jpg",
+    "static/media/cala-head.34959367.jpg": "/static/media/cala-head.34959367.jpg",
+    "static/media/cala-mouth.71d55e0e.jpg": "/static/media/cala-mouth.71d55e0e.jpg",
+    "static/media/cala-queen.7df67d0c.jpg": "/static/media/cala-queen.7df67d0c.jpg",
+    "static/media/cala-rail-bridge.dbdcd5fa.jpg": "/static/media/cala-rail-bridge.dbdcd5fa.jpg",
+    "static/media/cala-river.00929c02.jpg": "/static/media/cala-river.00929c02.jpg",
+    "static/media/cala-swiss-cheese.fb1c43eb.jpg": "/static/media/cala-swiss-cheese.fb1c43eb.jpg",
+    "static/media/cala-willamette.039ea520.jpg": "/static/media/cala-willamette.039ea520.jpg",
+    "static/media/heroVid.c0746add.mp4": "/static/media/heroVid.c0746add.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f11d4415.js",
+    "static/css/2.a0197091.chunk.css",
+    "static/js/2.f85bb241.chunk.js",
+    "static/css/main.cb96f7bc.chunk.css",
+    "static/js/main.e7249ff2.chunk.js"
+  ]
+}
