@@ -1,6 +1,6 @@
 const cors = require('cors');
 
-const whitelist = ['http://localhost:3000', 'http://localhost:3001', 'https://localhost:6000', 'https://localhost:6251'];
+const whitelist = ['http://calapooiariver.com', 'http://www.calapooiariver.com', 'https://calapooiariver.com', 'https://www.calapooiariver.com'];
 const corsOptionsDelegate = (req, callback) => {
     let corsOptions;
     console.log(req.header('Origin'));
