@@ -32,7 +32,7 @@ routeRouter
         res.end('PUT operation not supported on /routes');
     })
     .delete(cors.corsWithOptions, (req, res, next) => {
-        Partner.deleteMany()
+        Route.deleteMany()
         .then(response => {
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
