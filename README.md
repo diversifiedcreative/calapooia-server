@@ -1,4 +1,4 @@
-# Calapooia River React SPA
+# Calapooia River React SPA Server
 
 ## Introduction
 
